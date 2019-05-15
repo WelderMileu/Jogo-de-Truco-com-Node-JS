@@ -1,0 +1,25 @@
+{
+	"name":"truco",
+	"version":"1.0.0",
+	"description":"Placar do Truco",
+	"main":"server.js",
+	"author":{
+		"name":"Welder",
+		"email":"welderfelix21@gmail.com"
+	},
+	"scripts":{
+		"init":"node server.js",
+		"start":"nodemon server.js"
+	},
+	"license":"ISC",
+	"keywords":[],
+	"dependencies":{
+		"body-parse": "^0.1.0",
+    	"ejs": "^2.6.1",
+    	"express": "^4.16.4",
+    	"path": "^0.12.7"
+	},
+	"devDependencies":{
+		"nodemon": "^1.19.0"
+	}
+}

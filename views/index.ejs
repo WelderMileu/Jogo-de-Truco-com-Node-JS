@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html leng="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Placar do Truco</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="mt-3">
+				<div class="titulo">
+					<h1 class="text-roboto text-center text-clain"><%- texto %></h1>
+				</div>
+				<div class="conteudo mt-3 float-left">
+					<div class="ml-2">
+						<div class="float-left">
+							<span class="mr-3 text-premiun">Openente 1: <span id="op1"></span></span>
+							<div>
+								<p class="text-premiun">Quedas</p>
+								<span class="points" id="queda1">0</span>
+							</div>
+						</div>
+						<div>
+							<p class="text-premiun">Pontos</p>
+							<span class="points" id="pontos">0</span>
+						</div>
+						<div class="mt-3">
+							<span class="text-premiun">Tentos</span>
+							<div class="mt-2">
+								<button type="button" class="btn" onclick="p2()">+ 2</button>
+								<button type="button" class="btn" onclick="p4()">+ 4</button>
+							</div>
+							<div class="mt-2">
+								<button type="button" class="btn" onclick="p2n()">- 2</button>
+								<button type="button" class="btn" onclick="p4n()">- 4</button>
+							</div>
+						</div>
+					</div>
+					<div class="ml-5">
+						<div class="float-left">
+							<span class="mr-3 text-premiun">Openente 2: <span id="op2"></span></span>
+							<div>
+								<p class="text-premiun">Quedas</p>
+								<span class="points" id="queda2">0</span>
+							</div>
+						</div>
+						<div>
+							<p class="text-premiun">Pontos</p>
+							<span class="points" id="pontos2">0</span>
+						</div>
+						<div class="mt-3">
+							<span class="text-premiun">Tentos</span>
+							<div class="mt-2">
+								<button type="button" class="btn" onclick="p12()">+ 2</button>
+								<button type="button" class="btn" onclick="p14()">+ 4</button>
+							</div>
+							<div class="mt-2">
+								<button type="button" class="btn" onclick="p12n()">- 2</button>
+								<button type="button" class="btn" onclick="p14n()">- 4</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container mt-3">
+			<div>
+				<form class="float-left">
+					<div class="mr-3">
+						<input type="text" name="oponente1" placeholder="Oponente 1" class="form-control" id="temp1">
+					</div>
+					<div>
+						<input type="text" name="oponente2" placeholder="Oponente 2" class="form-control" id="temp2">
+					</div>
+					<div class="ml-2">
+						<button type="submit" class="btn-submit" onclick="users()">Imprimir Oponentes</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
