@@ -1,7 +1,7 @@
 *{
 	padding: 0;
 	margin: 0;
-	font-family: 'calibri',sans-serif;
+	font-family: 'roboto',sans-serif;
 }
 .container{
 	width: 900px;
@@ -25,15 +25,24 @@
 .text-center{
 	text-align: center;
 }
+.text-uppercase{
+	text-transform: uppercase;
+}
 .text-clain{
 	color: rgba(127,127,127);
+}
+.text-green{
+	color: green;
 }
 .text-roboto{
 	font-family: 'roboto',sans-serif;
 }
+.text-calibri{
+	font-family: 'calibri',sans-serif;
+}
 .text-premiun{
 	font-size: 20px;
-	color: green;
+	color: rgba(127,127,127);
 }
 .titulo{
 	border:1px solid #e6e6e6;
@@ -46,6 +55,7 @@
 	padding: 20px
 }
 .btn{
+	padding: 5px 10px;
 	width: 100px;
 	font-size: 20px;
 	border:none;
@@ -56,8 +66,9 @@
 	cursor: pointer;
 }
 .btn:hover{
-	background-color:#000;
+	background-color:green;
 	color:#fff;
+	opacity: .5;
 }
 .points{
 	font-size: 50px;
@@ -66,15 +77,18 @@
 	display: flex;
 }
 .form-control{
-	padding: 5px;
+	padding: 10px 10px;
 	border:none;
 	border:1px solid rgba(127,127,127);
 	border-radius: 5px;
+	color: rgba(127,127,127);
 }
 .btn-submit{
+	background-color: transparent;
+	color:green;
 	padding: 5px;
 	border:none;
-	border:1px solid rgba(127,127,127);
+	border:1px solid green;
 	border-radius: 5px;
 	width: 200px;
 	cursor:pointer;

@@ -16,24 +16,30 @@ let queda12 = 0;
 const p2 = () => {
 	points +=2;
 	pontos.innerHTML = points;
+	if (points < 10) {
+		pontos.innerHTML = "0"+points;
+	}
 	if (points >= 10) {
-		alert("Passou o limit");
+		alert("Parabens você ganhou 1 tento");
 		queda11 ++;
 		queda1.innerHTML = queda11;
 		points = 0;
-		pontos.innerHTML = 0;
+		pontos.innerHTML = "0"+0;
 	}
 }
 
 const p4 = () => {
 	points +=4;
 	pontos.innerHTML = points;
+	if (points < 10) {
+		pontos.innerHTML = "0"+points;
+	}
 	if (points >= 10) {
-		alert("Passou o limit");
+		alert("Parabens você ganhou 1 tento");
 		queda11 ++;
 		queda1.innerHTML = queda11;
 		points = 0;
-		pontos.innerHTML = 0;
+		pontos.innerHTML = "0"+0;
 	}
 }
 
@@ -51,7 +57,7 @@ const p12 = () => {
 	points2 +=2;
 	pontos2.innerHTML = points2;
 	if (points2 >= 10) {
-		alert("Passou o limit");
+		alert("Parabens você ganhou 1 tento");
 		queda12 ++;
 		queda2.innerHTML = queda12;
 		points2 = 0;
@@ -63,7 +69,7 @@ const p14 = () => {
 	points2 +=4;
 	pontos2.innerHTML = points2;
 	if (points2 >= 10) {
-		alert("Passou o limit");
+		alert("Parabens você ganhou 1 tento");
 		queda12 ++;
 		queda2.innerHTML = queda12;
 		points2 = 0;
@@ -82,9 +88,9 @@ const p14n = () => {
 }
 	
 const users = (e) => {
-	event.preventDefault(e);
 	op1.innerHTML = temp1;
-	op1.style.color = "rgba(127,127,127)";
+	op1.style.color = "green";
 	op2.innerHTML = temp2;
-	op2.style.color = "rgba(127,127,127)";
+	op2.style.color = "green";
+	event.preventDefault(e);
 }
