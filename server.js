@@ -11,7 +11,7 @@ const port = process.env.PORT || 3000
 app.set("view engine","ejs")
 app.use(express.static(path.join(__dirname + "/public")))
 app.use(bodyParse.json())
-app.use(bodyParse.urlencoded())
+app.use(bodyParse.urlencoded({ extended: false }))
 
 app.use("/", index)
 

@@ -19,10 +19,14 @@ const p2 = () => {
 	if (points < 10) {
 		pontos.innerHTML = "0"+points;
 	}
-	if (points >= 10) {
+	if (points > 10) {
 		alert("Parabens você ganhou 1 tento");
 		queda11 ++;
-		queda1.innerHTML = queda11;
+		if (queda11 < 10) {
+			queda1.innerHTML = "0"+queda11;
+		}else{
+			queda1.innerHTML = queda11;
+		}
 		points = 0;
 		pontos.innerHTML = "0"+0;
 	}
@@ -34,10 +38,14 @@ const p4 = () => {
 	if (points < 10) {
 		pontos.innerHTML = "0"+points;
 	}
-	if (points >= 10) {
+	if (points > 10) {
 		alert("Parabens você ganhou 1 tento");
 		queda11 ++;
-		queda1.innerHTML = queda11;
+		if (queda11 < 10) {
+			queda1.innerHTML = "0"+queda11;	
+		}else{
+			queda1.innerHTML = queda11;
+		}
 		points = 0;
 		pontos.innerHTML = "0"+0;
 	}
@@ -56,24 +64,38 @@ const p4n = () => {
 const p12 = () => {
 	points2 +=2;
 	pontos2.innerHTML = points2;
-	if (points2 >= 10) {
+	if (points2 < 10) {
+		pontos2.innerHTML = "0"+points2;
+	}
+	if (points2 > 10) {
 		alert("Parabens você ganhou 1 tento");
 		queda12 ++;
-		queda2.innerHTML = queda12;
+		if (queda12 < 10) {
+			queda2.innerHTML = "0"+queda12;	
+		}else{
+			queda2.innerHTML = queda12;
+		}
 		points2 = 0;
-		pontos2.innerHTML = 0;
+		pontos2.innerHTML = "0"+0;
 	}
 }
 
 const p14 = () => {
 	points2 +=4;
 	pontos2.innerHTML = points2;
-	if (points2 >= 10) {
+	if (points2 < 10) {
+		pontos2.innerHTML = "0"+points2;
+	}
+	if (points2 > 10) {
 		alert("Parabens você ganhou 1 tento");
 		queda12 ++;
-		queda2.innerHTML = queda12;
+		if (queda12 < 10) {
+			queda2.innerHTML = "0"+queda12;	
+		}else{
+			queda2.innerHTML = queda12;
+		}
 		points2 = 0;
-		pontos2.innerHTML = 0;
+		pontos2.innerHTML = "0"+0;
 	}
 }
 
