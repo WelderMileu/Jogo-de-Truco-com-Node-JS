@@ -34,6 +34,9 @@
 .text-green{
 	color: green;
 }
+.text-light{
+	color: #fff;
+}
 .text-roboto{
 	font-family: 'roboto',sans-serif;
 }
@@ -48,6 +51,7 @@
 	border:1px solid #e6e6e6;
 	padding: 20px;
 	border-radius: 20px;
+	background-color: green;
 }
 .conteudo{
 	border:1px solid #e6e6e6;
