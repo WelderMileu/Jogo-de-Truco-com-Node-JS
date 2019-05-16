@@ -114,5 +114,5 @@ const users = (e) => {
 	op1.style.color = "green";
 	op2.innerHTML = temp2;
 	op2.style.color = "green";
-	event.preventDefault(e);
+	event.preventDefault(); // Resolver o problema do prevent Default
 }
